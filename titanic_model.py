@@ -1,4 +1,3 @@
-import codecademylib3_seaborn
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # Load the passenger data
-passengers = pd.read_csv('passengers.csv')
+passengers = pd.read_csv('train.csv')
 
 # Update sex column to numerical
 passengers['Sex'] = passengers['Sex'].map({'female': '1', 'male': '0'})
